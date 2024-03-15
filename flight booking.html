@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="submit"] {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.flight {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.banner-section-bg-container {
+  background-image: url("flight.jpg");
+  height: 100vh;
+  background-size: cover;
+}
+.delivery-and-payment-section-img {
+  width: 1500px;
+}
+
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking - Gogaga Holidays</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Flight Booking - Gogaga Holidays</h1>
+        <nav>
+            <ul>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="banner-section-bg-container d-flex justify-content-center flex-column">
+        <div class="text-center">
+        
+       
+
+    <section id="flight-search">
+        <h2>Search for Flights</h2>
+        <form>
+            <label for="departure">Departure:</label>
+            <input type="text" id="departure" name="departure" placeholder="Departure airport">
+
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" placeholder="Destination airport">
+
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" name="departure-date">
+
+            <label for="return-date">Return Date:</label>
+            <input type="date" id="return-date" name="return-date">
+
+            <input type="submit" value="Search">
+        </form>
+    </section>
+</div>
+</div>
+<div class="col-12 col-md-7">
+    <h1 class="healthy-food-section-heading">
+       Book Now and get 20% OFF
+    </h1>
+    <img
+    src="booking.jpg"
+    class="delivery-and-payment-section-img"
+  />
+    <button class="custom-button">Book Now</button>
+  </div>
+
+    <section id="flight-results">
+        <h2>Flight Search Results</h2>
+        <!-- Display search results here -->
+        <div class="flight">
+            <h3>Flight 1</h3>
+            <p>Departure: Airport A</p>
+            <p>Destination: Airport B</p>
+            <p>Departure Date: YYYY-MM-DD</p>
+            <p>Return Date: YYYY-MM-DD</p>
+            <button>Select Flight</button>
+        </div>
+        <div class="flight">
+            <h3>Flight 2</h3>
+            <p>Departure: Airport C</p>
+            <p>Destination: Airport D</p>
+            <p>Departure Date: YYYY-MM-DD</p>
+            <p>Return Date: YYYY-MM-DD</p>
+            <button>Select Flight</button>
+        </div>
+        <!-- Add more flight options as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Gogaga Holidays. All rights reserved.</p>
+    </footer>
+</body>
+</html>
